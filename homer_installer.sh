@@ -413,7 +413,7 @@ get_mysql_details() {
     # echo "  Admin Username: $DB_ADMIN_USER"
     # echo "  Admin Password: $sql_admin_pass"
     echo ""
-    read -p "Please confirm the above details are correct [Y/n]" confirmation
+    read -p "Please confirm the above details are correct [y/n]" confirmation
 
     [[ -z "$confirmation" ]] && confirmation="y"
     [[ x"$confirmation"x == x"y"x ]] && confirmed="yes"
